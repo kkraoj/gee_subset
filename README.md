@@ -57,9 +57,8 @@ import gee_subset
 ```
 The function is called gee_subset(). Consult the script for correct parameter naming conventions. Currently minimum error trapping is provided.
 
-###  To timeshift queried data from UTM to local time zone
-Refer to script shift_time.py
-The script accepts gee_subset.py's output in pandas dataframe and adds a column called 'obs_date_local' for each row.
+###  To timeshift 
+The output gee_subset.py is a .csv file for each location. Each .csv file contains a columns called 'date' which contains the date and time of satellite observation in UTM format. To change this UTM time to that of local timezone refer to script shift_time.py. The script accepts gee_subset.py's output in pandas dataframe and adds a column called 'obs_date_local' for each row.
 
 ## Data format
 
